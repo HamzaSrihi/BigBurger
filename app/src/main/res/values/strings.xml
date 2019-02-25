@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Big Burger</string>
+    <string name="totalPrice">Prix totale</string>
+    <string name="payerCommande">Payer</string>
+    <string name="videPanier">Votre panier est vide</string>
+    <string name="supprimer">Supprimer</string>
 </resources>
