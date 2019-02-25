@@ -8,7 +8,7 @@ import com.test.hs.data.products.database.repository.ProductDao
 /**
  * Created by hamza on 24/02/2019.
  */
-@Database(entities = [(Product::class)], version = 1)
+@Database(entities = [(Product::class)], version = 1, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun productDao(): ProductDao
