@@ -1,7 +1,8 @@
 package com.test.hs.bigburger.activities
 
+import android.content.ClipData.newIntent
+import android.content.Intent
 import com.test.hs.bigburger.App
-import com.test.hs.bigburger.ProductView
 import com.test.hs.bigburger.R
 import com.test.hs.bigburger.adapters.ProductListAdapter
 import com.test.hs.bigburger.di.component.DaggerProductComponent
@@ -9,8 +10,11 @@ import com.test.hs.bigburger.di.component.DaggerProductComponent
 import com.test.hs.bigburger.presenters.ProductPresenter
 import com.test.hs.domain.Product
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.item_list_panier.*
 
 class MainActivity : BaseActivity<ProductPresenter>(), ProductView {
+
+
     override fun getLayout(): Int = R.layout.activity_main
 
     override fun initInjector() {
@@ -24,6 +28,7 @@ class MainActivity : BaseActivity<ProductPresenter>(), ProductView {
         list_product.apply {
             setHasFixedSize(true)
         }
+        buttonPanier.setOnClickListener { goToPanier() }
     }
 
     override fun showProductsList(products: List<Product>) {
@@ -32,6 +37,11 @@ class MainActivity : BaseActivity<ProductPresenter>(), ProductView {
     }
 
     private fun itemclicked(product: Product) {
-        //presenter.insertProduct(product)
+
+    }
+
+    override fun goToPanier() {
+        val intent = Intent(this, PanierActivity::class.java)
+        startActivity(intent)
     }
 }

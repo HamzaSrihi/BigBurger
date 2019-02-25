@@ -1,4 +1,4 @@
-package com.test.hs.bigburger
+package com.test.hs.bigburger.activities
 
 import com.test.hs.domain.Product
 

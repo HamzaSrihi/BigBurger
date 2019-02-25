@@ -1,4 +1,4 @@
-package com.test.hs.bigburger
+package com.test.hs.bigburger.activities
 
 import com.test.hs.domain.Product
 
@@ -8,4 +8,5 @@ import com.test.hs.domain.Product
 interface ProductView {
     fun initialiseView()
     fun showProductsList(products: List<Product>)
+    fun goToPanier()
 }
