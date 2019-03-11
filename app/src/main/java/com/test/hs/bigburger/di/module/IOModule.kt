@@ -12,7 +12,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
 /**
- * Created by hamza on 23/02/2019.
+ * Created by hamza on 08/03/2019.
  */
 @Module
 class IOModule {

@@ -3,10 +3,9 @@ package com.test.hs.bigburger
 import android.app.Application
 import com.test.hs.bigburger.di.component.AppComponent
 import com.test.hs.bigburger.di.component.DaggerAppComponent
-import com.test.hs.bigburger.di.module.AppModule
 
 /**
- * Created by hamza on 23/02/2019.
+ * Created by hamza on 08/03/2019.
  */
 class App : Application() {
     val applicationComponent: AppComponent by lazy {

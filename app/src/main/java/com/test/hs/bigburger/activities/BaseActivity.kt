@@ -6,7 +6,7 @@ import com.test.hs.bigburger.presenters.BasePresenter
 import javax.inject.Inject
 
 /**
- * Created by hamza on 23/02/2019.
+ * Created by hamza on 08/03/2019.
  */
 abstract class BaseActivity<P : BasePresenter<Any>> : AppCompatActivity() {
 

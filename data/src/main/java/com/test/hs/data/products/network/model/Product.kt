@@ -4,7 +4,7 @@ import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
 /**
- * Created by hamza on 22/02/2019.
+ * Created by hamza on 08/03/2019.
  */
 data class Product(
 

@@ -6,7 +6,7 @@ import com.test.hs.bigburger.di.module.ProductModule
 import dagger.Component
 
 /**
- * Created by hamza on 24/02/2019.
+ * Created by hamza on 08/03/2019.
  */
 
 @PerActivity

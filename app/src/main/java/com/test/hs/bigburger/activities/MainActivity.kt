@@ -10,6 +10,9 @@ import com.test.hs.bigburger.presenters.ProductPresenter
 import com.test.hs.domain.Product
 import kotlinx.android.synthetic.main.activity_main.*
 
+/**
+ * Created by hamza on 08/03/2019.
+ */
 class MainActivity : BaseActivity<ProductPresenter>(), ProductView {
     override fun getLayout(): Int = R.layout.activity_main
 

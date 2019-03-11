@@ -1,7 +1,7 @@
 package com.test.hs.bigburger.presenters
 
 /**
- * Created by hamza on 23/02/2019.
+ * Created by hamza on 08/03/2019.
  */
 abstract class BasePresenter<out T> {
     private var view: T? = null

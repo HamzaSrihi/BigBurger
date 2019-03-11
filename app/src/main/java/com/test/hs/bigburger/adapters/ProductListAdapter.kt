@@ -1,17 +1,11 @@
 package com.test.hs.bigburger.adapters
 
 import android.content.Context
-import android.content.Intent
 import android.net.Uri
-
-import android.support.v7.widget.CardView
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.TextView
 import com.test.hs.bigburger.R
 import com.test.hs.bigburger.di.module.GlideApp
 import com.test.hs.domain.Product
@@ -19,7 +13,7 @@ import kotlinx.android.synthetic.main.item_list_product.view.*
 import java.text.DecimalFormat
 
 /**
- * Created by hamza on 23/02/2019.
+ * Created by hamza on 08/03/2019.
  */
 class ProductListAdapter(private val context: Context, val clickListener: (Product) -> Unit, private val products: List<Product>) :
         RecyclerView.Adapter<ProductListAdapter.ViewHolder>() {

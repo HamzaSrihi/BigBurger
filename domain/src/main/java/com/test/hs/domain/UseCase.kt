@@ -7,7 +7,7 @@ import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 
 /**
- * Created by hamza on 23/02/2019.
+ * Created by hamza on 08/03/2019.
  */
 abstract class UseCase<T, in Params>(private val subscribeScheduler: Scheduler,
                                      private val postExecutionScheduler: Scheduler) {

@@ -4,7 +4,7 @@ import android.arch.persistence.room.*
 import com.test.hs.data.products.database.model.Product
 
 /**
- * Created by hamza on 24/02/2019.
+ * Created by hamza on 08/03/2019.
  */
 
 @Dao

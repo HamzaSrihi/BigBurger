@@ -6,7 +6,7 @@ import io.reactivex.Single
 import javax.inject.Inject
 
 /**
- * Created by hamza on 23/02/2019.
+ * Created by hamza on 08/03/2019.
  */
 class GetProductListUseCase  @Inject constructor(private val productsRepository: ProductRepository,
                                                  subscribeScheduler: Scheduler,

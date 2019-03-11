@@ -8,7 +8,7 @@ import com.test.hs.domain.Product
 import javax.inject.Inject
 
 /**
- * Created by hamza on 23/02/2019.
+ * Created by hamza on 08/03/2019.
  */
 class ProductPresenter @Inject constructor(private val getProductListUseCase: GetProductListUseCase) : BasePresenter<ProductView>() {
 
