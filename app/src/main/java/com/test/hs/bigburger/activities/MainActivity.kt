@@ -14,6 +14,7 @@ import kotlinx.android.synthetic.main.activity_main.*
  * Created by hamza on 08/03/2019.
  */
 class MainActivity : BaseActivity<ProductPresenter>(), ProductView {
+
     override fun getLayout(): Int = R.layout.activity_main
 
     override fun initInjector() {
@@ -29,11 +30,14 @@ class MainActivity : BaseActivity<ProductPresenter>(), ProductView {
         }
     }
 
+    //Show product list on our RecyclerView
     override fun showProductsList(products: List<Product>) {
         list_product.adapter = ProductListAdapter(this,
                 { product: Product -> itemclicked(product) }, products)
     }
 
+
+    // On clock on the item insert it to the database
     private fun itemclicked(product: Product) {
         //presenter.insertProduct(product)
     }
